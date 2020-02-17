@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My App</title>
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="img/layout/logo.png" />
+      <h1>Memory Monsters</h1>
+      <div class="userName" id="showName"></div>
+    </div>
+    <button class="reset" id="reset">Reset</button>
+    <button class="revel" id="revel">Revel</button>
+    <div class="timer" id="timer">
+      <h2 class="h1" id="h2"><time>00:00:00</time></h2>
+    </div>
+
+    <button class="changeUser" id="changeUser">Change user</button>
+    <div class="card" data-card="1" onclick="cardClicked(this)">
+      <img src="img/cards/1.png" />
+      <img class="back" src="img/cards/back.png" />
+    </div>
+    <div class="card" data-card="7" onclick="cardClicked(this)">
+      <img src="img/cards/7.png" />
+      <img class="back" src="img/cards/back.png" />
+    </div>
+    <div class="card" data-card="1" onclick="cardClicked(this)">
+      <img src="img/cards/1.png" />
+      <img class="back" src="img/cards/back.png" />
+    </div>
+    <div class="card" data-card="7" onclick="cardClicked(this)">
+      <img src="img/cards/7.png" />
+      <img class="back" src="img/cards/back.png" />
+    </div>
+    <div class="card" data-card="5" onclick="cardClicked(this)">
+      <img src="img/cards/5.png" />
+      <img class="back" src="img/cards/back.png" />
+    </div>
+    <div class="card" data-card="5" onclick="cardClicked(this)">
+      <img src="img/cards/5.png" />
+      <img class="back" src="img/cards/back.png" />
+    </div>
+    <button class="replay" id="replay">Replay</button>
+    <a class="linkBack" href="http://127.0.0.1:5500/inedx.html">Click Here</a>
+    <p class="getBackInfo">To get back to my page</p>
+
+    <div class="popup"  id="popup" style="display: none;">
+      <span class="title"> You won the best record: </span>
+      <span class="time" id="record-time">
+        0000
+      </span>
+    </div>
+
+    <script src="js/game.js"></script>
+  </body>
+</html>
